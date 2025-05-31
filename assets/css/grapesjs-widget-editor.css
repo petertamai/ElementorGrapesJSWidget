@@ -1,0 +1,26 @@
+/**
+ * GrapesJS Widget Editor Styles
+ * Minimal styles to avoid conflicts
+ */
+
+/* Widget wrapper in Elementor */
+.elementor-widget-grapesjs_html_editor .grapesjs-widget-wrapper {
+    min-height: 350px;
+}
+
+/* Ensure widget container has minimum height */
+.elementor-widget-grapesjs_html_editor .elementor-widget-container {
+    min-height: inherit;
+}
+
+/* GrapesJS container should fill the space */
+.elementor-widget-grapesjs_html_editor [id^="gjs-"] {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make sure empty GrapesJS editor still shows */
+.elementor-widget-grapesjs_html_editor .gjs-frame {
+    flex: 1;
+}

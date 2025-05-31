@@ -1,0 +1,26 @@
+/**
+ * GrapesJS Widget Styles
+ */
+
+/* Container Styles */
+.grapesjs-widget-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Frontend Content Display */
+.grapesjs-content-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+/* Basic button animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
